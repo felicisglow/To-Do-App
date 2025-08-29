@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-center {
+  min-height: 80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  
+}
+
+.custom-overlay{
+  width: 61.7%; 
+  justify-content: space-between;
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+.custom-card {
+  background: #f0f4ff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.07);
+  padding: 4rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
+}
+
+
+
+.custom-title {
+  color: #28768b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-form label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+  color:rgb(46, 55, 55);
+}
+
+.custom-input, .custom-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.custom-btn {
+  background: #28768b;
+  color: #fff;
+  padding: 0.2rem 1.0rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+  float:right;
+  
+}
+.custom-btn:hover {
+  background: #37a2c0;
+  transform: scale(1.05);
+}
+
+.custom-list-item {
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.2px 0.2px 3px #8b969a ;
+  transition: background 0.2s;
+  
+}
+
+.custom-list-item:hover{
+    box-shadow:2px 2px 10px #8b969a ;
+    transform: scale(1.005);
+}
+
+
+
+.custom-list-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.custom-circle-btn {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #28768b;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+
+
+.custom-circle-btn:hover {
+  border-color: #28768b;
+    background: #28768b;
+    transition: all 0.3s ease;
+}
+
+.custom-circle-btn:hover::after {
+  content: "✓";
+  opacity: 1;
+}

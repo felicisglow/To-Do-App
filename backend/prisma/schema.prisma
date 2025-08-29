@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Task {
+  id          String     @id @default(uuid())
+  title       String     @db.VarChar(160)
+  description String?
+  status      TaskStatus @default(OPEN)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([createdAt(sort: Desc)])
+}
+
+enum TaskStatus {
+  OPEN
+  DONE
+}
